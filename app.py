@@ -215,7 +215,7 @@ def success():
     <!DOCTYPE html>
     <html>
     <head>
-        <meta http-equiv="refresh" content="0; url=https://t.me/Life_Guide?start=paid">
+        <meta http-equiv="refresh" content="0; url=https://t.me/Life_GuideVitaBot?start=paid">
     </head>
     <body style="font-family:Arial; text-align:center; margin-top:80px;">
         <h1>Оплата прошла успешно 🎉</h1>

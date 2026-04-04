@@ -58,20 +58,20 @@ def home():
         }
 
         h1 {
-            font-size: 42px;
-            margin-bottom: 18px;
+            font-size: 32px;
+            margin-bottom: 16px;
         }
 
         .text {
-            font-size: 26px;
-            line-height: 1.45;
-            font-weight: 500;
-            margin-bottom: 24px;
+            font-size: 18px;
+            line-height: 1.35;
+            font-weight: 400;
+            margin-bottom: 18px;
         }
 
         .price {
-            font-weight: 500;
-            font-size: 34px;
+            font-weight: 300;
+            font-size: 24px;
         }
 
         #paypal-button-container {
@@ -83,24 +83,24 @@ def home():
 
         @media (max-width: 600px) {
             .box {
-                padding: 26px 18px;
+                padding: 20px 16px;
                 border-radius: 16px;
                 margin-top: 10px;
             }
 
             h1 {
-                font-size: 34px;
-                margin-bottom: 14px;
+                font-size: 26px;
+                margin-bottom: 12px;
             }
 
             .text {
-                font-size: 22px;
-                line-height: 1.4;
-                margin-bottom: 20px;
+                font-size: 17px;
+                line-height: 1.35;
+                margin-bottom: 16px;
             }
 
             .price {
-                font-size: 34px;
+                font-size: 28px;
             }
 
             #paypal-button-container {

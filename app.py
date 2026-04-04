@@ -48,30 +48,30 @@ def home():
 
         .box {
             width: 100%;
-            max-width: 650px;
+            max-width: 560px;
             background: white;
             border-radius: 22px;
-            padding: 42px 28px;
-            margin-top: 24px;
+            padding: 30px 22px;
+            margin-top: 18px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
             text-align: center;
         }
 
         h1 {
-            font-size: 52px;
-            margin-bottom: 24px;
+            font-size: 42px;
+            margin-bottom: 18px;
         }
 
         .text {
-            font-size: 34px;
-            line-height: 1.55;
+            font-size: 26px;
+            line-height: 1.45;
             font-weight: 500;
-            margin-bottom: 30px;
+            margin-bottom: 24px;
         }
 
         .price {
-            font-weight: 700;
-            font-size: 46px;
+            font-weight: 500;
+            font-size: 34px;
         }
 
         #paypal-button-container {
@@ -83,23 +83,24 @@ def home():
 
         @media (max-width: 600px) {
             .box {
-                padding: 34px 20px;
-                border-radius: 18px;
-                margin-top: 12px;
+                padding: 26px 18px;
+                border-radius: 16px;
+                margin-top: 10px;
             }
 
             h1 {
-                font-size: 42px;
-                margin-bottom: 20px;
+                font-size: 34px;
+                margin-bottom: 14px;
             }
 
             .text {
-                font-size: 28px;
-                line-height: 1.5;
+                font-size: 22px;
+                line-height: 1.4;
+                margin-bottom: 20px;
             }
 
             .price {
-                font-size: 46px;
+                font-size: 34px;
             }
 
             #paypal-button-container {

@@ -70,8 +70,8 @@ def home():
         }
 
         .price {
-            font-weight: bold;
-            font-size: 54px;
+            font-weight: 700;
+            font-size: 46px;
         }
 
         #paypal-button-container {

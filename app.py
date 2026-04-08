@@ -215,11 +215,22 @@ def success():
     <!DOCTYPE html>
     <html>
     <head>
-        <meta http-equiv="refresh" content="0; url=https://t.me/Life_GuideVitaBot?start=paid">
+        <meta charset="UTF-8">
+        <title>Оплата прошла успешно</title>
     </head>
     <body style="font-family:Arial; text-align:center; margin-top:80px;">
         <h1>Оплата прошла успешно 🎉</h1>
-        <p>Возвращаемся в Telegram...</p>
+        <p>Возвращаем вас в Telegram...</p>
+
+        <script>
+            setTimeout(function() {
+                window.location.href = "tg://resolve?domain=LifeGuideVitaBot&start=paid";
+            }, 300);
+
+            setTimeout(function() {
+                window.location.href = "https://t.me/LifeGuideVitaBot?start=paid";
+            }, 1200);
+        </script>
     </body>
     </html>
     """

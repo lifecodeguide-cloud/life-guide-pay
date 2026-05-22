@@ -64,9 +64,9 @@ paypal.Buttons({
             })
         })
         .then(res => res.json())
-               .then(data => {
-                    window.location.href = "/success?user_id=" + USER_ID;
-                });
+        .then(data => {
+            window.location.href = "/success?user_id=" + USER_ID;
+        });
 
         }).render('#paypal-button-container');
 </script>

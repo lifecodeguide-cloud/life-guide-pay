@@ -65,7 +65,8 @@ paypal.Buttons({
         })
         .then(res => res.json())
         .then(data => {
-            window.location.href = "https://t.me/LifeGuideVitaBot?start=paid_" + USER_ID;
+            window.location.href = "tg://resolve?domain=LifeGuideVitaBot&start=paid_" + USER_ID;
+        });
         });
     }
 

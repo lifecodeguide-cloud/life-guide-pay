@@ -65,18 +65,8 @@ paypal.Buttons({
         })
         .then(res => res.json())
                .then(data => {
-            const telegramLink = "https://t.me/LifeGuideVitaBot?start=paid_" + USER_ID;
-
-            if (window.Telegram && window.Telegram.WebApp) {
-                window.Telegram.WebApp.openTelegramLink(telegramLink);
-
-                setTimeout(function() {
-                    window.Telegram.WebApp.close();
-                }, 700);
-            } else {
-                window.location.href = telegramLink;
-            }
-        });
+                    window.location.href = "/success?user_id=" + USER_ID;
+                });
 
         }).render('#paypal-button-container');
 </script>

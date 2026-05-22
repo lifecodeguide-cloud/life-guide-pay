@@ -67,10 +67,9 @@ paypal.Buttons({
         .then(data => {
             window.location.href = "tg://resolve?domain=LifeGuideVitaBot&start=paid_" + USER_ID;
         });
-        });
-    }
+        }
 
-}).render('#paypal-button-container');
+        }).render('#paypal-button-container');
 </script>
 
 </body>

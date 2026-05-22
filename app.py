@@ -67,7 +67,8 @@ paypal.Buttons({
         .then(data => {
             window.location.href = "/success?user_id=" + USER_ID;
         });
-
+        }
+        
         }).render('#paypal-button-container');
 </script>
 

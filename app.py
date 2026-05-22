@@ -64,14 +64,19 @@ paypal.Buttons({
             })
         })
         .then(res => res.json())
-        .then(data => {
-            if (window.Telegram && window.Telegram.WebApp) {
-                window.Telegram.WebApp.close();
-            }
+               .then(data => {
+            const telegramLink = "https://t.me/LifeGuideVitaBot?start=paid_" + USER_ID;
 
-    window.location.href = "tg://resolve?domain=LifeGuideVitaBot&start=paid_" + USER_ID;
+            if (window.Telegram && window.Telegram.WebApp) {
+                window.Telegram.WebApp.openTelegramLink(telegramLink);
+
+                setTimeout(function() {
+                    window.Telegram.WebApp.close();
+                }, 700);
+            } else {
+                window.location.href = telegramLink;
+            }
         });
-        }
 
         }).render('#paypal-button-container');
 </script>

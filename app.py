@@ -158,6 +158,13 @@ def success():
 <script>
 setTimeout(function() {{
     window.location.href = "https://t.me/LifeGuideVitaBot?start=paid_{user_id}";
+
+    setTimeout(function() {{
+        if (window.Telegram && window.Telegram.WebApp) {{
+            window.Telegram.WebApp.close();
+        }}
+    }}, 500);
+
 }}, 1500);
 </script>
 """
